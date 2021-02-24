@@ -1,0 +1,40 @@
+{
+    "navigation": [
+        {
+            "icon": "fab fa-wordpress",
+            "uri": "https://www.tinytalk.de",
+            "title": "cult-x blog",
+            "description": "my it blog"
+        },
+        {
+            "icon": "fab fa-microsoft",
+            "uri": "https://portal.office.com",
+            "title": "Office 365",
+            "description": "Office 365 Login"
+        },
+        {
+            "icon": "fas fa-chalkboard-teacher",
+            "uri": "http://www.teamviewer.com/link/?url=505374&amp;id=883309075",
+            "title": "TeamViewer",
+            "description": "Remote Control"
+        },
+        {
+            "icon": "far fa-clock",
+            "uri": "http://everytimezone.com/",
+            "title": "Time Zones",
+            "description": "Zeitzonen halt"
+        },
+        {
+            "icon": "fas fa-key",
+            "uri": "https://www.cult-x.net/passgen.html",
+            "title": "Password Generator",
+            "description": "JavaScript Passwort Generator"
+        },
+        {
+            "icon": "fas fa-link",
+            "uri": "https://www.cult-x.net/urlcode.html",
+            "title": "URL de/encoder",
+            "description": "URLs encoden & decoden"
+        }
+    ]
+}

@@ -1,0 +1,393 @@
+@font-face {
+    font-family: 'SegoeUI';
+    src: local("Segoe UI"), url("//c.s-microsoft.com/static/fonts/segoe-ui/west-european/normal/latest.woff2");
+}
+
+body {
+    margin: 0;
+    font-family: SegoeUI;
+    background: #fff;
+}
+
+body a {
+    transition: 0.5s all;
+    -webkit-transition: 0.5s all;
+    -moz-transition: 0.5s all;
+    -o-transition: 0.5s all;
+    -ms-transition: 0.5s all;
+    text-decoration: none;
+    outline: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+    font-family: SegoeUI;
+}
+
+p {
+    margin: 0;
+}
+
+ul,
+label {
+    margin: 1px;
+    padding: 2px;
+}
+
+body a:hover,
+body a:focus {
+    text-decoration: none;
+    outline: none;
+}
+
+/*-- header --*/
+
+.header {
+    /* background-color: #433f50; */
+    background-color: #2D3642;
+    /* change me */
+    padding: 1.5em 0;
+    position: relative;
+    display: block;
+}
+
+.header-logo h1 {
+    font-size: 3.5em;
+    display: inline-block;
+    font-weight: 300;
+    /*text-transform: uppercase;*/
+}
+
+.header-logo h1 a {
+    color: #fff;
+    /* change me */
+    text-decoration: none;
+    display: inline-block;
+}
+
+/*-- //header --*/
+
+/*-- content --*/
+
+.bubbles {
+    padding: 6em 0;
+}
+
+/*-- blocks --*/
+
+div.blocksParent {
+    padding: 1.2em .5em;
+    /*border: solid #91d100 2px;*/
+    border: solid #fff 1px;
+    display: table;
+    padding: 5px;
+    width: 320px;
+    height: 120px;
+    margin: 5px 0;
+    /* you can change/remove margin */
+    transition: 0.3s all;
+    -webkit-transition: 0.3s all;
+    -o-transition: 0.3s all;
+    -moz-transition: 0.3s all;
+    -ms-transition: 0.3s all;
+    margin-left: 1em;
+}
+
+div.blocksParent:hover {
+    /*background: #eee;*/
+    /* change me */
+    border: solid #ccc 1px;
+}
+
+div.blocksPicture {
+    vertical-align: middle;
+    display: table-cell;
+    padding-right: 5px;
+    width: 75px;
+    /* you can change width */
+    font-size: 3.5em;
+    color: #91d100;
+}
+
+div.blocksText {
+    vertical-align: middle;
+    display: table-cell;
+    text-align: justify;
+    color: #333;
+}
+
+div.blocksCellHeader {
+    font-size: 1.5em;
+}
+
+div.blocksCellText {
+    font-size: 1em;
+}
+
+/*-- //blocks --*/
+
+/*-- urlcoder --*/
+
+/*
+	blue:  #007fff
+	green: #91d100
+*/
+.info-box {
+    border: 0px #91d100 solid;
+    color: #222;
+    background: #fff;
+    font-family: SegoeUI;
+    font-size: 80%;
+    font-style: italic;
+    padding: 10pt;
+    margin: 0 auto;
+    width: 100em;
+}
+
+.center-text {
+    text-align: center;
+}
+
+.urlcoder {
+    padding: 5px;
+}
+
+.g-border {
+    border: 1px #91d100 solid;
+    color: #222;
+    background: #fff;
+    font-family: SegoeUI;
+    font-size: 120%;
+    padding: 10pt;
+    margin: 3px;
+}
+
+.g-border:hover {
+    border: 1px #222 solid;
+    color: #91d100;
+    background: #433f50;
+}
+
+.b-border {
+    border: 1px #007fff solid;
+    color: #222;
+    background: #fff;
+    font-family: SegoeUI;
+    font-size: 120%;
+    padding: 10pt;
+    margin: 3px;
+}
+
+.b-border:hover {
+    border: 1px #222 solid;
+    color: #007fff;
+    background: #433f50;
+}
+
+/*-- //urlcoder --*/
+
+/*-- jspassgen --*/
+
+.copyButton,
+.copyButton:hover {
+    font-family: SegoeUI;
+    font-size: 140%;
+    color: #91d100;
+    transition: 0.3s all;
+    -webkit-transition: 0.3s all;
+    -o-transition: 0.3s all;
+    -moz-transition: 0.3s all;
+    -ms-transition: 0.3s all;
+}
+
+.jspassgen {
+    font-family: SegoeUI;
+    font-size: 120%;
+    padding: 10pt;
+    margin: 3px;
+    width: 450px;
+}
+
+.b-bottom-border {
+    border-bottom: 3px solid #007fff;
+    min-width: 240px;
+}
+
+.g-bottom-border {
+    border-bottom: 2px solid #91d100;
+    min-width: 240px;
+}
+
+.jspg-input {
+    width: 10em;
+    /*font-size: 80%; */
+    line-height: 1.5;
+}
+
+.jspg-input-numbers {
+    width: 4em;
+}
+
+div.jspg-section {
+    margin-top: 0.8em;
+    margin-bottom: 0.8em;
+}
+
+div.jspg-section>div {
+    display: inline-block;
+    padding: 0.3em 0.5em;
+    background-color: #fefefe;
+    /*border: 0.05em solid #91d100;*/
+    /*border-radius: 0.5em;*/
+}
+
+div.jspg-section>div>*:first-child {
+    margin-top: 0em;
+}
+
+div.jspg-section>div>*:last-child {
+    margin-bottom: 0em;
+}
+
+input[type=number] {
+    text-align: right;
+}
+
+#charset-checkboxes {
+    color: #433f50;
+}
+
+#charset-checkboxes small {
+    font-size: 70%;
+    color: #999;
+}
+
+#charset-checkboxes span:hover {
+    color: #91d100;
+    /*background: #433f50;*/
+}
+
+.charset-header {
+    color: #433f50;
+}
+
+/*-- //jspassgen --*/
+
+/*-- responsive-design --*/
+
+@media(max-width:1366px) {
+    .bubbles {
+        padding: 5em 0;
+    }
+}
+
+
+
+@media(max-width:800px) {
+    .header {
+        padding: 1em 0;
+    }
+
+    .bubbles {
+        padding: 4em 0;
+    }
+
+}
+
+
+
+@media(max-width:667px) {
+    .bubbles {
+        padding: 3em 0;
+    }
+
+}
+
+
+
+@media(max-width:480px) {
+    p {
+        font-size: 0.9em;
+    }
+}
+
+
+
+@media(max-width:375px) {
+    .header {
+        padding: 0.6em 0;
+    }
+
+    .bubbles {
+        padding: 2em 0;
+    }
+}
+
+.container:before,
+.container:after {
+    display: table;
+    content: " ";
+}
+
+.container:after {
+    clear: both;
+}
+
+.container {
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+@media (min-width: 768px) {
+    .container {
+        width: 750px;
+    }
+}
+
+@media (min-width: 992px) {
+    .container {
+        width: 970px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .container {
+        width: 1170px;
+    }
+}
+
+
+
+@media screen and (min-width: 768px) {
+
+    .container {
+        padding-right: 60px;
+        padding-left: 60px;
+    }
+
+}
+
+.col-sm {
+    position: relative;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+.col-xs {
+    float: left;
+}
+
+
+.ConsoleFont {
+    font-family: Consolas !important;
+}
+
+/*-- //responsive-design --*/

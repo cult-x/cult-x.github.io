@@ -1,0 +1,99 @@
+<!DOCTYPE HTML>
+<html lang="de">
+<head>
+	<title>cult-x</title>
+	<link rel="shortcut icon" href="favicon.ico">
+	<!-- meta -->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<!-- //meta -->
+	<!-- css -->
+	<link href="css/bootstrap.css" type="text/css" rel="stylesheet" media="all">
+	<link href="css/style.css" type="text/css" rel="stylesheet" media="all">  
+	<link href="css/font-awesome.css" rel="stylesheet">   <!-- font-awesome icons --> 
+	<!-- //css -->  
+	<!-- js -->
+	<!-- //js -->
+	</head> 
+<body>
+	<!-- header -->
+	<div class="header">
+		<div class="container">
+			<div class="agile_header_grid"> 
+				<div class="header-mdl header-logo"><!-- header-two --> 
+					<h1>
+						<a href="index.html"><i class="fa fa-home" aria-hidden="true"></i> cult-x</a>
+						<a href="#">/ <i class="fa fa-lock" aria-hidden="true"></i> JavaScript Password Generator</a>
+					</h1> 
+				</div>
+			</div>  
+		</div>	
+	</div>	
+	<!-- //header -->
+
+<!-- content -->
+<div class="container w3-agile-view">
+
+		
+
+<br>
+<div class="jspassgen">
+
+
+<form method="get" onsubmit="StartPasswordGeneration(); return false;">
+		<div id="charset" class="jspg-section">
+			<div>
+				<p class="charset-header g-bottom-border">Password Options:</p>
+				<p id="charset-checkboxes">
+					<span>
+						<input type="checkbox" id="custom"> 
+						<label for="custom">Custom:</label> 
+						<input type="text" id="customchars" value="" size="15" class="jspg-input" oninput="document.getElementById('custom').checked=true;">
+					</span>
+				</p>
+			</div>
+		</div>
+		
+		<div class="jspg-section">
+			<div>
+				<table>
+					<tbody>
+						<tr>
+							<td><input type="radio" name="type" id="by-length" checked="checked"> <label for="by-length">Length:&#xA0;</label></td>
+							<td><input type="number" min="0" value="0" step="1" id="length" class="jspg-input-numbers" oninput="document.getElementById('by-length').checked=true;"> characters</td>
+						</tr>
+						<tr>
+							<td><input type="radio" name="type" id="by-entropy"> <label for="by-entropy">Entropy:</label>&#xA0;</td>
+							<td><input type="number" min="0" value="0" step="any" id="entropy" class="jspg-input-numbers" oninput="document.getElementById('by-entropy').checked=true;"> bits</td>
+						</tr>
+						<tr>
+							<td><label for="by-entropy">Number of Passwords</label></td>
+							<td><input type="number" min="1" max="100" value="10" step="1" id="numOfPasswords" class="jspg-input-numbers"></td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		</div>
+		
+		<p>
+			<input type="submit" value="Generate password" class="g-border">
+			<br>
+			<span id="passwordOptions"></span>
+			<textarea cols="65" rows="10" id="inpPassword" class="g-border ConsoleFont" readonly="readonly"></textarea>
+			<!-- <a href="Javascript:doNothing();" onclick="copyPwdToClip()" class="copyButton"><span class="fa fa-copy"></span></a> //-->
+			<div id="statusText"></div>
+		</p>
+		<p id="statistics"></p>
+		<input type="hidden" name="charsetStr" id="charsetStr">
+	</form>
+	
+</div>
+</div>
+<!-- //content -->
+<!-- js -->
+<script src="js/passgen.js"></script>
+<script>initPasswordOptionsForm();</script>
+<script>initPasswordSettingsForm();</script>
+<!-- //js -->
+</body>
+</html>

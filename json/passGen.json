@@ -1,0 +1,46 @@
+{
+    "CharacterSets": [
+        {
+            "active": true,
+            "name": "Numbers",
+            "chars": "0123456789"
+        },
+        {
+            "active": true,
+            "name": "Lowercase",
+            "chars": "abcdefghijklmnopqrstuvwxyz"
+        },
+        {
+            "active": true,
+            "name": "Uppercase",
+            "chars": "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+        },
+        {
+            "active": true,
+            "name": "Simple symbols",
+            "chars": "!#$%@-_&"
+        },
+        {
+            "active": false,
+            "name": "ASCII symbols",
+            "chars": "!#$%@-_&()*+,-.:;<=>?@[]_{}"
+        },
+        {
+            "active": false,
+            "name": "Special ASCII symbols",
+            "chars": "\"'^`~|/\\"
+        },
+        {
+            "active": false,
+            "name": "Space",
+            "chars": " "
+        }
+    ],
+    "Settings" : [
+        {
+            "Length": 20,
+            "Entropy": 128
+        }
+    ]
+}
+
