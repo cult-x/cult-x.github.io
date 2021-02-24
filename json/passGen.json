@@ -38,8 +38,8 @@
     ],
     "Settings" : [
         {
-            "Length": 20,
-            "Entropy": 128
+            "Length": 60,
+            "Entropy": 256
         }
     ]
 }
