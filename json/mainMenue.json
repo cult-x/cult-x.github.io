@@ -26,13 +26,13 @@
         },
         {
             "icon": "fas fa-key",
-            "uri": "https://www.cult-x.net/passgen.html",
+            "uri": "https://cult-x.github.io//passgen.html",
             "title": "Password Generator",
             "description": "JavaScript Passwort Generator"
         },
         {
             "icon": "fas fa-link",
-            "uri": "https://www.cult-x.net/urlcode.html",
+            "uri": "https://cult-x.github.io//urlcode.html",
             "title": "URL de/encoder",
             "description": "URLs encoden & decoden"
         }
