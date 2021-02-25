@@ -39,7 +39,7 @@
     "Settings" : [
         {
             "Length": 60,
-            "Entropy": 256
+            "Entropy": 380
         }
     ]
 }
