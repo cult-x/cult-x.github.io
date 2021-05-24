@@ -3,14 +3,8 @@
         {
             "icon": "fab fa-wordpress",
             "uri": "https://www.tinytalk.de",
-            "title": "cult-x blog",
-            "description": "my it blog"
-        },
-        {
-            "icon": "fab fa-microsoft",
-            "uri": "https://portal.office.com",
-            "title": "Office 365",
-            "description": "Office 365 Login"
+            "title": "Blog",
+            "description": "TinyTalk Blog"
         },
         {
             "icon": "fas fa-chalkboard-teacher",
