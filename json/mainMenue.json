@@ -35,6 +35,12 @@
             "uri": "https://cult-x.github.io/urlcode.html",
             "title": "URL de/encoder",
             "description": "URLs encoden & decoden"
+        },
+        {
+            "icon": "fa fa-qrcode",
+            "uri": "https://cult-x.github.io/wifi-qr.html",
+            "title": "WiFi QR Code Generator",
+            "description": "WiFi QR Code Generator (pure javscript)"
         }
     ]
 }
