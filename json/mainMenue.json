@@ -39,7 +39,7 @@
         {
             "icon": "fa fa-qrcode",
             "uri": "https://cult-x.github.io/wifi-qr.html",
-            "title": "WiFi QR Code Generator",
+            "title": "WiFi QR Code",
             "description": "WiFi QR Code Generator (pure javscript)"
         }
     ]
