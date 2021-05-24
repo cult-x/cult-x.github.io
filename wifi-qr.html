@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <title>cult-x / wifi qr code generator</title>
+    <link rel="shortcut icon" href="favicon.ico" />
+    <!-- meta -->
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <!-- //meta -->
+    <!-- css -->
+    <link href="css/bootstrap.css" type="text/css" rel="stylesheet" media="all" />
+    <link href="css/style.css" type="text/css" rel="stylesheet" media="all" />
+    <link href="css/font-awesome.css" rel="stylesheet" />
+    <!-- font-awesome icons -->
+    <!-- //css -->
+    <!-- js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.slim.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.qrcode/1.0/jquery.qrcode.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-storage-api/1.9.4/jquery.storageapi.min.js"></script>
+    <!-- //js -->
+</head>
+
+<body>
+    <!-- header -->
+    <div class="header">
+        <div class="container">
+            <div class="agile_header_grid">
+                <div class="header-mdl header-logo">
+                    <!-- header-two -->
+                    <h1>
+                        <a href="index.html"><i class="fa fa-home" aria-hidden="true"></i> cult-x</a>
+                        <a href="#">/ <i class="fa fa-wifi" aria-hidden="true"></i>
+                            <i class="fa fa-qrcode" aria-hidden="true"></i> Generator (pure javscript)</a>
+                    </h1>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <section id="generator">
+            <div class="page-header">
+                <h1 id="title">pure JS WiFi QR Code Generator</h1>
+            </div>
+            <div id="history"></div>
+            <form id="form">
+                <div class="form-group has-feedback">
+                    <label for="ssid" class="control-label">SSID</label>
+                    <div class="input-group">
+                        <span id="basic-addon-ssid" class="input-group-addon"><i
+                                class="glyphicon glyphicon-signal"></i></span>
+                        <input type="text" id="ssid" name="ssid" class="form-control" placeholder="SSID"
+                            aria-describedby="basic-addon-ssid" required />
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="enc" class="control-label">Encryption</label>
+                    <div class="input-group">
+                        <select name="enc" id="enc" class="g-border">
+                            <option value="WPA">WPA/WPA2</option>
+                            <option value="WEP">WEP</option>
+                            <option value="nopass">None</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="form-group has-feedback" id="key-p">
+                    <label class="control-label">Key</label>
+                    <div class="input-group">
+                        <span id="basic-addon1" class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
+                        <input type="password" id="key" name="key" class="form-control" placeholder="key" aria-describedby="basic-addon1" required />
+                        <span class="input-group-btn"><button class="btn btn-default" type="button" id="display-key">
+                                <i class="glyphicon glyphicon-eye-open" id="display-key-icon"></i></button></span>
+                    </div>
+                </div>
+
+                <div class="form-group g-border" for="hidden">
+                    <label class="pull-left control-label" for="hidden">Hidden SSID</label>
+                    <div class="input-group ">
+                        <input type="checkbox" name="hidden" id="hidden" data-toggle="tooltip" title="Is your SSID hidden?" />
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <button id="generate" class="btn g-border">Generate <i class="fa fa-qrcode" aria-hidden="true"></i></button>
+                    <a href="#" id="export" class="btn g-border" target="_blank" data-toggle="tooltip" title="Export the QR code as a PNG."><i class="fa fa-download"></i> Download as png</a>
+                </div>
+            </form>
+            <h1 id="showssid">SSID: none</h1>
+            <h1 id="showkey">Passphrase: none</h1>
+            <div id="qrcode"></div>
+        </section>
+    </div>
+    <footer class="footer"></footer>
+    <script type="text/javascript" src="js/wifi-qr.js"></script>
+</body>
+
+</html>
