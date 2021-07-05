@@ -10,63 +10,81 @@
 <html lang="de">
 
 <head>
-	<title>cult-x</title>
-	<link rel="shortcut icon" href="favicon.ico">
-	<!-- meta -->
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-	<!-- //meta -->
-	<!-- css -->
-	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css" integrity="sha384-/rXc/GQVaYpyDdyxK+ecHPVYJSN9bmVFBvjA/9eOB+pb3F2w2N6fc5qB9Ew5yIns" crossorigin="anonymous">
-	<!--<link href="css/bootstrap.css" type="text/css" rel="stylesheet" media="all"> -->
-	<link href="css/style.css" type="text/css" rel="stylesheet" media="all">
-	<!-- <link href="css/font-awesome.css" rel="stylesheet">-->
-	<!-- font-awesome icons -->
-	<!-- //css -->
-	<!-- js -->
-
-	<!-- //js -->
+    <title>cult-x</title>
+    <link rel="shortcut icon" href="favicon.ico">
+    <!-- meta -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <!-- //meta -->
+    <!-- css -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css"
+        integrity="sha384-/rXc/GQVaYpyDdyxK+ecHPVYJSN9bmVFBvjA/9eOB+pb3F2w2N6fc5qB9Ew5yIns" crossorigin="anonymous">
+    <!--<link href="css/bootstrap.css" type="text/css" rel="stylesheet" media="all"> -->
+    <link href="css/style.css" type="text/css" rel="stylesheet" media="all">
+    <!-- <link href="css/font-awesome.css" rel="stylesheet">-->
+    <!-- font-awesome icons -->
+    <!-- //css -->
+    <!-- js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.slim.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.qrcode/1.0/jquery.qrcode.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-storage-api/1.9.4/jquery.storageapi.min.js"></script>
+    <!-- //js -->
 
 
 </head>
 
 <body>
-	<!-- header -->
-	<div class="header">
-		<div class="container">
-			<div class="agile_header_grid">
-				<div class="header-mdl header-logo">
-					<!-- header-two -->
-					<h1>
-						<a href="index.html">
-							<i class="fa fa-home" aria-hidden="true"></i> cult-x</a>
-					</h1>
-				</div>
-			</div>
-		</div>
-	</div>
-	<!-- //header -->
-	<!-- content -->
-	<div id="bubbles" class="bubbles">
-		<div class="container">
-			<div class="bubbles-agileinfo" id="content">
+    <!-- header -->
+    <div class="header">
+        <div class="container">
+            <div class="agile_header_grid">
+                <div class="header-mdl header-logo">
+                    <!-- header-two -->
+                    <h1>
+                        <a href="index.html">
+                            <i class="fa fa-home" aria-hidden="true"></i> cult-x</a>
+                    </h1>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- //header -->
+    <!-- content -->
+    <div id="bubbles" class="bubbles">
+        <div class="container">
+            <div class="bubbles-agileinfo" id="content">
 
-				<div class="clearfix"> </div>
-			</div>
-		</div>
-		<div class="info-box">
-			<span class="fa fa-chevron-right"></span>
-			Diese Webseite erfasst und verarbeitet keine personenbezogenen Daten. So erfolgt bspw. die Erzeugung von Passw&ouml;rtern
-			und das de/encodieren von URLs direkt im Browser.
-		</div>
+                <div class="clearfix"> </div>
+            </div>
+        </div>
 
-		<!-- //DSGVO Info -->
-	</div>
-	<!-- //content -->
-	<!-- script -->
-	<script src="js/navigation.js"></script>
-	<!-- //script -->
-	<!-- DSGVO Info -->
+
+        <div>
+            <label for="counter" class="control-label">Charater counter</label>
+            <div class="input-group">
+                <span id="basic-addon-counter" class="input-group-addon"><i class="glyphicon glyphicon-font"></i></span>
+                <input type="text" id="counter" name="counter" class="form-control" placeholder="some text"
+                    oninput="document.getElementById('counter-label').textContent = document.getElementById('counter').value.length;"
+                    required />
+            </div>
+            <div id="counter-label" class="input-group">0</div>
+        </div>
+        <!-- DSGVO Info -->
+        <div class="info-box">
+            <span class="fa fa-chevron-right"></span>
+            Diese Webseite erfasst und verarbeitet keine personenbezogenen Daten. So erfolgt bspw. die Erzeugung von
+            Passw&ouml;rtern
+            und das de/encodieren von URLs direkt im Browser.
+        </div>
+
+        <!-- //DSGVO Info -->
+    </div>
+    <!-- //content -->
+    <!-- script -->
+    <script src="js/navigation.js"></script>
+    <!-- //script -->
+
 
 </body>
 
