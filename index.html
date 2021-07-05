@@ -58,17 +58,20 @@
             </div>
         </div>
 
-
+        <!-- char counter -->
         <div>
             <label for="counter" class="control-label">Charater counter</label>
             <div class="input-group">
-                <span id="basic-addon-counter" class="input-group-addon"><i class="glyphicon glyphicon-font"></i></span>
+                <span id="basic-addon-counter" class="input-group-addon" style="border-color: #91d100;"><span
+                        id="counter-label" class="input-group">0</span></span>
                 <input type="text" id="counter" name="counter" class="form-control" placeholder="some text"
+                    style="border-color: #91d100;"
                     oninput="document.getElementById('counter-label').textContent = document.getElementById('counter').value.length;"
                     required />
             </div>
-            <div id="counter-label" class="input-group">0</div>
         </div>
+        <!-- //char counter -->
+
         <!-- DSGVO Info -->
         <div class="info-box">
             <span class="fa fa-chevron-right"></span>
